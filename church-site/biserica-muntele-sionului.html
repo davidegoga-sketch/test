@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biserica Muntele Sionului — Basiliano, Italia</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Muntele Sionului</div>
+  <ul class="nav-links">
+    <li><a href="#bun-venit">Bun venit</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="acasa">
+  <div class="cross-deco"></div>
+  <p class="hero-eyebrow">Un loc de credință, speranță și comunitate</p>
+  <h1>Biserica<br><em>Muntele Sionului</em></h1>
+  <p class="hero-sub">O comunitate caldă și primitoare în Basiliano, Italia, unde toți sunt invitați să caute, să crească și să aparțină împreună.</p>
+  <a href="#bun-venit" class="hero-cta">Descoperă comunitatea noastră</a>
+</section>
+
+<!-- BUN VENIT -->
+<section id="bun-venit">
+  <div class="section-inner">
+    <div class="welcome-grid">
+      <div class="welcome-text">
+        <p class="section-label">Mesajul nostru</p>
+        <h2 class="section-title">Ești mereu<br>binevenit aici.</h2>
+        <div class="divider"></div>
+        <p>Biserica Muntele Sionului este un loc de adunare pentru comunitatea română din Basiliano și împrejurimi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="welcome-quote">
+          <blockquote>„Căci acolo unde sunt doi sau trei adunați în Numele Meu, sunt și Eu în mijlocul lor."</blockquote>
+          <cite>Matei 18:20</cite>
+        </div>
+        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+      <div class="welcome-visual">
+        <div class="welcome-img-frame">
+          <img src="galerie/foto1.jpg" alt="Biserica Muntele Sionului" style="width: 100%; height: auto;;">
+          <div class="frame-accent"></div>
+          <div class="frame-accent-br"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program">
+  <div class="section-inner">
+    <p class="section-label">Întâlniri săptămânale</p>
+    <h2 class="section-title">Servicii &amp; Evenimente</h2>
+    <div class="divider"></div>
+
+    <div class="schedule-grid">
+      <div class="schedule-card fade-up">
+        <p class="schedule-card-day">Duminică</p>
+        <h3 class="schedule-card-title">Serviciu de dimineață</h3>
+        <p class="schedule-card-time">10:00 &mdash; 12:00</p>
+        <span class="schedule-tag tag-worship">Slujire</span>
+        <p class="schedule-card-desc">Descriere.</p>
+      </div>
+
+      <div class="schedule-card fade-up">
+        <p class="schedule-card-day">Duminică</p>
+        <h3 class="schedule-card-title">Serviciu de seara</h3>
+        <p class="schedule-card-time">18:00 &mdash; 20:00</p>
+        <span class="schedule-tag tag-worship">Slujire</span>
+        <p class="schedule-card-desc">Descriere.</p>
+      </div>
+
+      <div class="schedule-card fade-up">
+        <p class="schedule-card-day">Joi</p>
+        <h3 class="schedule-card-title">Seara de tineret</h3>
+        <p class="schedule-card-time">18:00 &mdash; 19:00</p>
+        <span class="schedule-tag tag-youth">Tineret</span>
+        <p class="schedule-card-desc">Descriere.</p>
+      </div>
+
+      <div class="schedule-card fade-up">
+        <p class="schedule-card-day">Vineri</p>
+        <h3 class="schedule-card-title">Repetitii (orchestra)</h3>
+        <p class="schedule-card-time">18:30 &mdash; 19:30</p>
+        <span class="schedule-tag tag-community">Comunitate</span>
+        <p class="schedule-card-desc">Descriere.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie">
+  <div class="section-inner">
+    <p class="section-label">Comunitatea</p>
+    <h2 class="section-title">Galeria Noastra</h2>
+    <div class="divider"></div>
+    <p class="gallery-intro">Descriere.
+    <!-- Carousel -->
+    <div class="carousel-viewport" id="carouselViewport">
+      <div class="carousel-track" id="carouselTrack">
+        <!-- slides injected by JS -->
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-top:1.2rem; flex-wrap:wrap; gap:0.8rem;">
+      <div class="carousel-dots" id="carouselDots"></div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prevBtn" aria-label="Anterior">
+          <svg viewBox="0 0 16 16"><polyline points="10,3 5,8 10,13"/></svg>
+        </button>
+        <button class="carousel-btn" id="nextBtn" aria-label="Următor">
+          <svg viewBox="0 0 16 16"><polyline points="6,3 11,8 6,13"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <button class="lightbox-arrow prev" id="lightboxPrev">&#8592;</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-arrow next" id="lightboxNext">&#8594;</button>
+  <span class="lightbox-caption" id="lightboxCaption"></span>
+</div>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">Biserica Muntele Sionului</p>
+      <p class="footer-tagline">O comunitate de credință înrădăcinată în dragoste, slujire și speranța nemuritoare a Evangheliei.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Vizitează-ne</p>
+      <ul>
+        <li>Basiliano (UD)</li>
+        <li>Friuli-Venezia Giulia, Italia</li>
+        <li style="margin-top:0.6rem;"><a href="tel:+39000000000">+39 000 000 0000</a></li>
+        <li><a href="mailto:contact@munteleisionului.it">contact@muntelesionului.it</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Linkuri rapide</p>
+      <ul>
+        <li><a href="#bun-venit">Povestea noastră</a></li>
+        <li><a href="#program">Servicii</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Biserica Muntele Sionului. Toate drepturile rezervate.</span>
+    <span>Basiliano (UD), Italia</span>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   CONFIGURARE GALERIE
+   ───────────────────────────────────────────────────────────────
+   1. Creează un folder numit  galerie/  lângă acest fișier HTML.
+   2. Copiază fotografiile acolo (JPG, PNG sau WEBP).
+   3. Decomentează rândurile de mai jos și completează:
+        src   → numele fișierului (ex: "foto1.jpg")
+        label → legenda afișată la hover și în lightbox
+   ═══════════════════════════════════════════════════════════════ */
+const IMAGINI = [
+  { src: 'foto1.jpg',  label: 'Serviciu duminical'    },
+  { src: 'foto2.jpg',  label: 'Studiu biblic'       },
+  { src: 'foto3.jpg',  label: 'Predica duminicala' },
+  // { src: 'foto4.jpg',  label: 'Rugăciune de seară'    },
+  // { src: 'foto5.jpg',  label: 'Sărbătoare de Paște'   },
+  // { src: 'foto6.jpg',  label: 'Activitate copii'      },
+];
+
+/* ── internal config ── */
+const FOLDER      = 'galerie/';
+const ROW_HEIGHT  = 340;   // px — fixed display height; width adapts to image aspect ratio
+const AUTO_MS     = 5000;  // ms between auto-advances
+
+const track    = document.getElementById('carouselTrack');
+const dotsEl   = document.getElementById('carouselDots');
+const viewport = document.getElementById('carouselViewport');
+
+let currentIndex = 0;
+let autoTimer    = null;
+let lightboxIdx  = 0;
+const GAP        = 16;
+
+/* ── build ── */
+function buildCarousel() {
+  track.innerHTML  = '';
+  dotsEl.innerHTML = '';
+
+  if (IMAGINI.length === 0) {
+    // show placeholder tiles when no images are configured yet
+    const labels = ['Adaugă imagini în folderul galerie/', '', '', ''];
+    labels.forEach(txt => {
+      const ph = document.createElement('div');
+      ph.className = 'carousel-placeholder';
+      ph.textContent = txt;
+      track.appendChild(ph);
+    });
+    return;
+  }
+
+  IMAGINI.forEach((item, idx) => {
+    const slide = document.createElement('div');
+    slide.className = 'carousel-slide';
+
+    const img = new Image();
+    img.alt     = item.label || '';
+    img.loading = 'lazy';
+    img.style.height = ROW_HEIGHT + 'px';
+    img.style.width  = 'auto';
+
+    // hide broken slides gracefully
+    img.onerror = () => { slide.style.display = 'none'; };
+
+    img.src = FOLDER + item.src;
+
+    const overlay = document.createElement('div');
+    overlay.className = 'slide-overlay';
+    const lbl = document.createElement('span');
+    lbl.className   = 'slide-label';
+    lbl.textContent = item.label || '';
+    overlay.appendChild(lbl);
+
+    slide.appendChild(img);
+    slide.appendChild(overlay);
+    slide.addEventListener('click', () => openLightbox(idx));
+    track.appendChild(slide);
+
+    // dot
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (idx === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Slide ' + (idx + 1));
+    dot.addEventListener('click', () => goTo(idx));
+    dotsEl.appendChild(dot);
+  });
+
+  updatePosition();
+  startAuto();
+}
+
+/* ── position helpers ── */
+function slideOffset(idx) {
+  const slides = track.querySelectorAll('.carousel-slide');
+  let x = 0;
+  for (let i = 0; i < idx && i < slides.length; i++) {
+    x += slides[i].offsetWidth + GAP;
+  }
+  return x;
+}
+
+function updatePosition() {
+  track.style.transform = `translateX(-${slideOffset(currentIndex)}px)`;
+  dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === currentIndex);
+  });
+}
+
+function goTo(idx) {
+  const total = IMAGINI.length;
+  if (!total) return;
+  currentIndex = ((idx % total) + total) % total;
+  updatePosition();
+  resetAuto();
+}
+
+function prev() { goTo(currentIndex - 1); }
+function next() { goTo(currentIndex + 1); }
+
+document.getElementById('prevBtn').addEventListener('click', prev);
+document.getElementById('nextBtn').addEventListener('click', next);
+
+/* ── auto-advance ── */
+function startAuto() {
+  if (IMAGINI.length < 2) return;
+  autoTimer = setInterval(next, AUTO_MS);
+}
+function resetAuto() { clearInterval(autoTimer); startAuto(); }
+
+/* ── keyboard ── */
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft')  prev();
+  if (e.key === 'ArrowRight') next();
+  if (e.key === 'Escape')     closeLightbox();
+});
+
+/* ── touch swipe ── */
+let touchStartX = null;
+viewport.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+viewport.addEventListener('touchend',   e => {
+  if (touchStartX === null) return;
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
+  touchStartX = null;
+});
+
+/* ── lightbox ── */
+const lightbox = document.getElementById('lightbox');
+const lbImg    = document.getElementById('lightboxImg');
+const lbCap    = document.getElementById('lightboxCaption');
+
+function openLightbox(idx) {
+  lightboxIdx     = idx;
+  lbImg.src       = FOLDER + IMAGINI[idx].src;
+  lbImg.alt       = IMAGINI[idx].label || '';
+  lbCap.textContent = IMAGINI[idx].label || '';
+  lightbox.classList.add('open');
+}
+function closeLightbox() { lightbox.classList.remove('open'); }
+function lbPrev() { lightboxIdx = ((lightboxIdx - 1) + IMAGINI.length) % IMAGINI.length; openLightbox(lightboxIdx); }
+function lbNext() { lightboxIdx = (lightboxIdx + 1) % IMAGINI.length; openLightbox(lightboxIdx); }
+
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lightboxPrev').addEventListener('click',  lbPrev);
+document.getElementById('lightboxNext').addEventListener('click',  lbNext);
+lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+/* ── scroll animations ── */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+/* ── init ── */
+buildCarousel();
+</script>
+
+</body>
+</html>
